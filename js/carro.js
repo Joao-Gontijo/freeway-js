@@ -1,5 +1,7 @@
 //carros
 let xCarros = [600, 600, 600];
+let comprimentoCarro = 60;
+let alturaCarro = 40;
 
 //posições da estrada
 let yCarros = [40, 97, 150, 211, 262, 320];
@@ -8,7 +10,7 @@ let velocidadeCarros = [2, 3, 1.2]
 
 function mostraCarro(){
     for(let i = 0; i < imagemCarros.length; i++){
-        image(imagemCarros[i], xCarros[i], yCarros[i], 60, 40); 
+        image(imagemCarros[i], xCarros[i], yCarros[i], comprimentoCarro, alturaCarro); 
     }
     movimentaCarro();
 }
