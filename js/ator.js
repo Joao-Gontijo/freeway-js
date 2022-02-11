@@ -4,6 +4,8 @@ let yAtor = 368;
 
 let colisao = false;
 
+let meusPontos = 0;
+
 function mostraAtor(){
     image(imagemDoAtor, xAtor, yAtor, 28, 28);
     movimentaAtor();
@@ -24,11 +26,26 @@ function verificaColisao(){
         colisao = collideRectCircle(xCarros[i], yCarros[i], comprimentoCarro, 
             alturaCarro, xAtor, yAtor, 14);
             if(colisao){
-                colidiu();
+                voltaAtorPosicaoInicial();
             }
     }
 }
 
-function colidiu(){
+function voltaAtorPosicaoInicial(){
     yAtor = 368;
+}
+
+function incluiPontos(){
+    textAlign(CENTER);
+    textSize(22);
+    fill(color(80, 255, 255));
+    text(meusPontos, width/5, 27);
+    marcaPonto();
+}
+
+function marcaPonto(){
+    if(yAtor < 15){
+        meusPontos += 1;
+        voltaAtorPosicaoInicial();
+    }
 }

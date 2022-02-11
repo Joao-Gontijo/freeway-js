@@ -7,4 +7,5 @@ function draw(){
     background(imagemDaEstrada);
     mostraAtor();
     mostraCarro();
+    incluiPontos();
 }
