@@ -4,9 +4,9 @@ let comprimentoCarro = 60;
 let alturaCarro = 40;
 
 //posições da estrada
-let yCarros = [40, 97, 150, 211, 262, 320];
+let yCarros = [40, 97, 150, 211, 262, 318];
 
-let velocidadeCarros = [2, 3, 1.2, 7, 3.7, 2.5]
+let velocidadeCarros = [2, 3, 1.2, 7, 3.7, 2.8]
 
 function mostraCarro(){
     for(let i = 0; i < imagemCarros.length; i++){

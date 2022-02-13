@@ -7,7 +7,7 @@ let colisao = false;
 let meusPontos = 0;
 
 function mostraAtor(){
-    image(imagemDoAtor, xAtor, yAtor, 28, 28);
+    image(imagemDoAtor, xAtor, yAtor, 27, 27);
     movimentaAtor();
 }
 
@@ -27,8 +27,15 @@ function verificaColisao(){
             alturaCarro, xAtor, yAtor, 14);
             if(colisao){
                 voltaAtorPosicaoInicial();
+                if(pontosMaiorQueZero()){
+                    meusPontos -= 1;
+                }
             }
     }
+}
+
+function pontosMaiorQueZero(){
+    return meusPontos > 0;
 }
 
 function voltaAtorPosicaoInicial(){
