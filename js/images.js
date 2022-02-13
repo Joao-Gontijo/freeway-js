@@ -1,8 +1,14 @@
+//images and sounds
+
 let imagemDaEstrada;
 let imagemDoAtor;
 let imagemCarro;
 let imagemCarro2;
 let imagemCarro3;
+
+let somDaTrilha;
+let somDaColisao;
+let somDoPonto;
 
 function preload(){
     imagemDaEstrada = loadImage("./assets/images/estrada.png");
@@ -12,4 +18,8 @@ function preload(){
     imagemCarro3 = loadImage("./assets/images/carro-3.png");
     imagemCarros = [imagemCarro, imagemCarro2, imagemCarro3,
     imagemCarro2, imagemCarro, imagemCarro3];
+
+    somDaTrilha = loadSound("./assets/sounds/trilha.mp3");
+    somDaColisao = loadSound("./assets/sounds/colidiu.mp3");
+    somDoPonto = loadSound("./assets/sounds/pontos.wav");
 }
